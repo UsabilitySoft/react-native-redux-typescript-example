@@ -30,13 +30,11 @@ const App = () => {
             </View>
           )}
           <View style={styles.body}>
-            
-            <View style={styles.sectionContainer}>
+            {/* <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>{Language.COIN_NAME} {Language.BALANCE}</Text>
               <Balance />
-            </View>
+            </View> */}
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Transactions</Text>
               <TransactionViewList />
             </View>
           </View>
