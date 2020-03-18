@@ -6,12 +6,13 @@ Clone repo. Navigate to project root and run:
 
 `cd ios && pod install`
 
-## Run:
+## Run on iOS:
 
 `cd .. && yarn ios`
 
 ### Missing Due to Time Limitation
 
+- Faciloty to add funds
 - TDD
 - CI/CD options e.g. Terraform
 
