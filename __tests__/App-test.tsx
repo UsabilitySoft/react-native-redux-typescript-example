@@ -4,11 +4,35 @@
 
 import 'react-native';
 import React from 'react';
-import App from '../App';
-
-// Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+import { Provider } from 'react-redux';
+import configureStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
+
+import App from '../App';
+import { initialState } from '../src/account/transaction.reducer';
+const mockStore = configureStore([thunk]);
+
+describe('App', () => {
+  let store;
+  let component: any;
+
+  beforeEach(() => {
+
+    store = mockStore({
+      transaction: initialState
+    });
+
+    component = renderer.create(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
+  });
+
+  it('renders correctly', () => {
+    component;
+  });
+
 });

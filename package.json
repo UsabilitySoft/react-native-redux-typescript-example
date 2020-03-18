@@ -10,8 +10,13 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@types/react-redux": "^7.1.7",
+    "@types/redux-mock-store": "^1.0.2",
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -24,10 +29,12 @@
     "@typescript-eslint/parser": "^2.12.0",
     "babel-jest": "^24.9.0",
     "eslint": "^6.5.1",
+    "fetch-mock": "^9.2.1",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
-    "react-test-renderer": "16.9.0",
     "prettier": "^1.19.1",
+    "react-test-renderer": "16.9.0",
+    "redux-mock-store": "^1.5.4",
     "typescript": "^3.7.3"
   },
   "jest": {

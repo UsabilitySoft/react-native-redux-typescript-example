@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Transaction List Should render with transactions state from Redux store 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "center",
+        "flexDirection": "row",
+        "minHeight": 70,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "paddingVertical": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <Text>
+          Bø
+          20.00
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <Text>
+          Bó
+          Gifts
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Transaction List should render with given state from Redux store 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "center",
+        "flexDirection": "row",
+        "minHeight": 70,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "paddingVertical": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <Text>
+          Bø
+          20.00
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <Text>
+          Bó
+          Gifts
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "center",
+        "flexDirection": "row",
+        "minHeight": 70,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "paddingVertical": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <Text>
+          Bø
+          -6.00
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <Text>
+          Github
+          Subscriptions
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "alignSelf": "center",
+        "flexDirection": "row",
+        "minHeight": 70,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "paddingVertical": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <Text>
+          Bø
+          -0.63
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <Text>
+          Cafe Nero
+          Eating Out
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
