@@ -1,27 +1,18 @@
 /**
  * Bó Front End Programming Challenge
  *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- * 
- * Following these instructions
+ *  Generated with the TypeScript template following these instructions
  * https://github.com/UsabilitySoft/blank-running-React-Native-with-TypeScript-instructions
  *
  * @format
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-import { app as styles } from './src/themes/bo'
+import { SafeAreaView, ScrollView, View, Text, StatusBar } from 'react-native';
+import { app as styles } from './src/theme/bo'
 import TransactionViewList from './src/account/transaction.view.list';
-
-// import {connect} from 'react-redux';
+import Balance from './src/account/balance';
+import { Language } from './src/helpers/language';
 
 declare var global: {HermesInternal: null | {}};
 
@@ -41,10 +32,11 @@ const App = () => {
           <View style={styles.body}>
             
             <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>{Language.COIN_NAME} {Language.BALANCE}</Text>
+              <Balance />
+            </View>
+            <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Transactions</Text>
-              <Text style={styles.sectionDescription}>
-              Last updated:   
-              </Text>
               <TransactionViewList />
             </View>
           </View>

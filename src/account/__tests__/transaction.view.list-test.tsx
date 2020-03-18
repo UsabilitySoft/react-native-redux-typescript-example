@@ -7,7 +7,7 @@ import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
 import TransactionViewList from '../transaction.view.list';
-import { initialState } from '../transaction.reducer';
+// import { initialState } from '../transaction.reducer';
 const mockStore = configureStore([thunk]);
 
 describe('Transaction List', () => {
@@ -46,7 +46,7 @@ describe('Transaction List', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  // We would need to simulate events, skipping TDD due to time limitation
+  // We would need to simulate events, we can also test actions and reducers, skipping TDD due to time limitation
   // it('should dispatch an action on button click', () => {
   // });
 });

@@ -1,7 +1,7 @@
 import { ThunkAction, ThunkDispatch } from 'redux-thunk';
 import { EReduxActionTypes, IReduxBaseAction } from '../redux/root.reducer';
 import { ITransaction, IReduxTransactionState } from './transaction.reducer';
-import { Endpoints } from '../constants/api.endpoints'
+import { Endpoints } from '../helpers/api.endpoints'
 
 export interface IReduxTransactionsRequestAction extends IReduxBaseAction {
   type: EReduxActionTypes.TRANSACTIONS_REQUEST;

@@ -9,6 +9,7 @@ const colours = {
 export const app = StyleSheet.create({
   scrollView: {
     backgroundColor: colours.white,
+    height: '100%'
   },
   engine: {
     position: 'absolute',

@@ -5,6 +5,7 @@ import {Button, StyleSheet, Text, View} from 'react-native';
 import { connect } from 'react-redux';
 import { AnyAction, bindActionCreators, Dispatch } from 'redux';
 import { AppState } from '../redux/root.reducer';
+import { setBalance } from './balance.actions';
 import { getTransactions } from './transaction.actions';
 import { ITransaction } from './transaction.reducer';
 import TransactionRow from './transaction.view.row';
@@ -44,12 +45,9 @@ const mapStateToProps = (state: AppState) => ({
     
 const mapDispatchToProps = (dispatch: Dispatch<AnyAction>) =>
   bindActionCreators(
-    { getTransactions },
+    { getTransactions, /* setBalance */ },
       dispatch
   );
     
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(TransactionViewList);
+export default connect(mapStateToProps,mapDispatchToProps)(TransactionViewList);
       
